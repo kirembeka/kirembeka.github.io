@@ -1,0 +1,147 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(207, 121, 34);
+    background: linear-gradient(-45deg, rgb(75, 70, 70), #292828, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+h1 marquee {
+    margin-top: 0.5px;
+    padding-top: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-shadow: 3px 3px black;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kavivanar', cursive;
+    font-weight: normal;
+}
+h2 {
+    font-size: 2rem;
+    color: #A51F10;
+    margin: 0;
+}
+a {
+    color: #DA0090;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.leftheader {
+    flex-basis: 40%;
+    text-align: right;
+    padding-right: 0.5rem;
+}
+.rightheader {
+    flex-basis: 60%;
+    margin-top: 3.75rem;
+    padding-left: 0.5rem;
+}
+.rightheader h1 {
+    margin: 0;
+    color: #DA0090;
+    font-size: 3em;
+}
+.rightheader p {
+    margin-top: -0.5rem;
+}
+nav {
+    border-bottom: 1px solid #A61F11;
+    border-top: 1px solid #DA0090;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    text-decoration: none;
+    color: #73352E;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+nav a:hover {
+    background-color: black;
+    color: #84DE37
+}
+ul {
+    margin: 3rem;
+}
+li {
+    align-items:center;
+
+    display:inline-block;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    padding:0;}
+section {
+    border-bottom: 1px solid #DA0090;
+    margin-bottom: 0.3rem;
+    display: flex;
+    flex-flow: column nowrap;
+}
+article {
+    margin: 2rem 0;
+}
+article img {
+    float: left;
+    margin: 0 1rem 1rem 0;
+    border-radius: 1rem;
+    width: 304px;
+}
+article::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.posted {
+    font-size: 0.8rem;
+    color: #89A611;
+}
+footer {
+    padding: 1rem 0 3rem 0;
+    text-align: center;
+    font-size: 0.8rem;
+    border-top: 1px solid #A61F11;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+footer li {
+    display: inline-block;
+}
